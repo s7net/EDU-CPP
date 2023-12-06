@@ -4,4 +4,4 @@ Learn CPP via Leila Esmaeili
 cd FolderName <br>
 g++ main.cpp -o main && ./main
 
-test sync
+TEST SYNC1
