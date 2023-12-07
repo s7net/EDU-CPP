@@ -1,58 +1,52 @@
 #include <iostream>
 using namespace std;
-
 int main() {
-  const string educppText = R"(
-	 _______  ______   __   __    _______  _______  _______ 
-	|       ||      | |  | |  |  |       ||       ||       |
-	|    ___||  _    ||  | |  |  |       ||    _  ||    _  |
-	|   |___ | | |   ||  |_|  |  |       ||   |_| ||   |_| |
-	|    ___|| |_|   ||       |  |      _||    ___||    ___|
-	|   |___ |       ||       |  |     |_ |   |    |   |    
-	|_______||______| |_______|  |_______||___|    |___|    
+  const string SelectNumberText = R"(
+  _______  ______   __   __    _______  _______  _______ 
+  |       ||      | |  | |  |  |       ||       ||       |
+  |    ___||  _    ||  | |  |  |       ||    _  ||    _  |
+  |   |___ | | |   ||  |_|  |  |       ||   |_| ||   |_| |
+  |    ___|| |_|   ||       |  |      _||    ___||    ___|
+  |   |___ |       ||       |  |     |_ |   |    |   |    
+  |_______||______| |_______|  |_______||___|    |___|    
 
-	Hi, please select session number:
-	1. Session1
-	2. Session2
-	3. Session3
-	)";
-  cout << educppText << endl;
-
-  int selectedNumber;
-  cin >> selectedNumber;
-  system("clear");
-
-  switch (selectedNumber) {
+  Hi, please select session number:
+  1. Session1
+  2. Session2
+  3. Session3
+    )";
+  cout << SelectNumberText << endl;
+  int SelectedNumber;
+  cin >> SelectedNumber;
+  cout << system("clear");
+  switch (SelectedNumber) {
   case 1:
-    system("g++ -o s1 Session1/main.cpp && ./s1");
+    cout << system("g++ -o main /Session1/main.cpp && ./main");
     break;
   case 2:
-    system("g++ -o s2 Session2/main.cpp && ./s2");
+    cout << system("g++ -o main /Session2/main.cpp && ./main");
     break;
   case 3:
-    system("clear");
-    string s3SelectNumberText = R"(
-			 please select file :
-			1.setPrecision.cpp
-			2.SizeOF.cpp
-			3.DataTypeConvertor.cpp
-			)";
-    cout << s3SelectNumberText << endl;
-    int s3SelectNumber;
-    cin >> s3SelectNumber;
-    switch (s3SelectNumber) {
+    cout << system("clear");
+    string s3SelecteNumberText = R"(
+      please Selecet Number :
+      1.SerPrecision.cpp
+      2.SizeOF.cpp
+      3.DataTypeConvertor.cpp
+      )";
+    int s3SelectedNumber;
+    cin >> s3SelectedNumber;
+    switch (s3SelectedNumber) {
     case 1:
-      system("g++ -o s3setPrecision Session3/setPrecision.cpp $$ "
-             "./s3SetPrecision");
+      cout << system("g++ -o main /Session3/SerPrecision.cpp");
       break;
     case 2:
-      system("g++ -o s3SizeOF Session3/SizeOF.cpp && ./s3SizeOF");
+      cout << system("g++ -o main /Session3/SizeOF.cpp");
       break;
     case 3:
-      system("g+= -o s3DataTypeConvertor Session3/DataConvertor.cpp && ./s3DataTypeConvertor");
+      cout << system("g++ -o main /Session3/DataTypeConvertor.cpp");
       break;
     }
-
     break;
   }
   return 0;
