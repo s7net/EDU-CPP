@@ -11,4 +11,4 @@ cd FolderName
 g++ main.cpp -o main && ./main
 ```
 # <img src="https://raw.githubusercontent.com/ahspace7/EDU-CPP/main/object-storage/social.svg" width="25"> Social Media
-- Channel : [Click Here](https://t.me/LE_CEIT_QIAU)
+- Telegram Channel : [Click Here](https://t.me/LE_CEIT_QIAU)
