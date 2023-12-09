@@ -9,5 +9,5 @@
 cd FolderName
 g++ main.cpp -o main && ./main
 ```
-# Social Media
+# <img src="https://raw.githubusercontent.com/ahspace7/EDU-CPP/main/object-storage/social.svg" width="25">Social Media
 - Channel : [Click Here](https://t.me/LE_CEIT_QIAU)
