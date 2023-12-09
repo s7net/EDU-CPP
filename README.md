@@ -4,6 +4,6 @@
 Learn CPP via Leila Esmaeili
 # Run in Replit
 ```run
-cd FolderName <br>
+cd FolderName
 g++ main.cpp -o main && ./main
 ```
