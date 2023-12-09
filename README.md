@@ -8,3 +8,5 @@
 cd FolderName
 g++ main.cpp -o main && ./main
 ```
+# Social Media
+- Channel : [Click Here](https://t.me/LE_CEIT_QIAU)
