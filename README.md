@@ -2,6 +2,7 @@
 
 
 # <img src="https://raw.githubusercontent.com/ahspace7/EDU-CPP/main/object-storage/cpp.svg" width="30" heght="3-">  EDU-CPP
+A small but useful repository that is updated every week after the master's lesson
 - [x] Teacher : Dr. Leila Esmaeili
 - [x] Student (Auther this Repo) : Amir Hossein Soleimani
 # <img src="https://raw.githubusercontent.com/ahspace7/EDU-CPP/main/object-storage/replit.svg" width="25" height="25"> Run a custom file Repl.it (in shell)
