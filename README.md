@@ -1,4 +1,5 @@
-<div align="center"><img src="https://github.com/ahspace7/EDU-CPP/blob/main/object-stora/main.PNG?raw=true" width="700"></div>
+<div align="center"><img src="https://github.com/ahspace7/EDU-CPP/assets/148908703/67b955cf-1eab-4eb5-ac6b-866ee117e70c" width="700"></div>
+
 
 # <img src="https://raw.githubusercontent.com/ahspace7/EDU-CPP/main/object-storage/cpp.svg" width="30" heght="3-">  EDU-CPP
 - [x] Teacher : Dr. Leila Esmaeili
