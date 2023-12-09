@@ -9,6 +9,5 @@ int number;
     while(number<=100){
         cout<<++number<<endl;
     }
-    }
 return 0;
 }
