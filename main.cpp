@@ -13,6 +13,7 @@ int main() {
   |_______||______| |_______|  |_______||___|    |___|    
 
   Hi, please select session number:
+  0. archive
   1. Session1
   2. Session2
   3. Session3
@@ -30,14 +31,15 @@ int main() {
     3.Operators
     )";
     int s0SelectedNumber;
+    int number;
     cin >> s0SelectedNumber;
     switch (s0SelectedNumber) {
     case 1:
-      int number;
-      cout << "please inter number:" << endl;
-      cin >> number;
-      while (number <= 100) {
-        cout << ++number << endl;
+  cout<<"please inter number:"<<endl;
+  cin>>number;
+    while(number<=100){
+        cout<<++number<<endl;
+    }
         break;
       case 2:
         int number;
@@ -67,9 +69,7 @@ int main()
 return 0;
 }
         )";
-        break;
-      }
-    }
+        break;}
     break;
   case 1:
     int x, y, s;
