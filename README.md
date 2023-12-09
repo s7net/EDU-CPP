@@ -7,3 +7,5 @@ Learn CPP via Leila Esmaeili
 cd FolderName
 g++ main.cpp -o main && ./main
 ```
+- [x] Complete!
+- [ ] Not complete!
