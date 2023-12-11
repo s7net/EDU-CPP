@@ -11,5 +11,5 @@ cd FolderName
 g++ main.cpp -o main && ./main
 ```
 # <img src="https://raw.githubusercontent.com/ahspace7/EDU-CPP/main/object-storage/social.svg" width="25"> Social Media
-![Telegram](https://img.shields.io/website?url=https%3A%2F%2Ft.me%2FLE_CEIT_QIAU&up_message=Dr. Leila Esmaeili - Qom IAU&color=blue)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Ft.me%2FLE_CEIT_QIAU&up_message=Dr.%20Leila%20Esmaeili%20-%20Qom%20IAU&color=blue)
 
