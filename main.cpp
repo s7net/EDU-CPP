@@ -15,11 +15,11 @@ int main()
   |_______||______| |_______|  |_______||___|    |___|    
 
   Hi, please select session number:
+  m. Makeup
   0. archive
   1. Session1
   2. Session2
   3. Session3
-  4. Makeup
     )";
     cout << SelectNumberText << endl;
     int SelectedNumber;
@@ -174,7 +174,7 @@ return 0;
         }
         break;
     }
-    case 4:
+    case 'm':
         string s4SelectNumberText = R"(
             please inter file number :
             1. shomaresh
