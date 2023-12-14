@@ -175,6 +175,7 @@ return 0;
         break;
     }
     case 'm':
+    {
         string s4SelectNumberText = R"(
             please inter file number :
             1. shomaresh
@@ -243,6 +244,9 @@ return 0;
             cout << number1 / number2;
             break;
         }
+    }
+    default:
+        cout << "this in number invalid !";
         break;
     }
     return 0;
