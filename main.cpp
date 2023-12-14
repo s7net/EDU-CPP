@@ -236,7 +236,7 @@ return 0;
             int number1, number2;
             cin >> number1 >> number2;
 
-            cout << "reasult is :" << endl;
+            cout << "reasult is : " << endl;
             cout << number1 + number2 << endl;
             cout << number1 - number2 << endl;
             cout << number1 * number2 << endl;
