@@ -2,8 +2,10 @@
 #include <iomanip>
 #include <iostream>
 using namespace std;
-int main() {
-  const string SelectNumberText = R"(
+int main()
+{
+    int number;
+    const string SelectNumberText = R"(
   _______  ______   __   __    _______  _______  _______ 
   |       ||      | |  | |  |  |       ||       ||       |
   |    ___||  _    ||  | |  |  |       ||    _  ||    _  |
@@ -17,40 +19,45 @@ int main() {
   1. Session1
   2. Session2
   3. Session3
+  4. Makeup
     )";
-  cout << SelectNumberText << endl;
-  int SelectedNumber;
-  cin >> SelectedNumber;
-  const int PRICE = 200000;
-  switch (SelectedNumber) {
-  case 0:
-    cout << R"(
+    cout << SelectNumberText << endl;
+    int SelectedNumber;
+    cin >> SelectedNumber;
+    const int PRICE = 200000;
+    switch (SelectedNumber)
+    {
+    case 0:
+        cout << R"(
     please select number
     1.for-while
     2.do-while
     3.Operators
     )";
-    int s0SelectedNumber;
-    int number;
-    cin >> s0SelectedNumber;
-    switch (s0SelectedNumber) {
-    case 1:
-  cout<<"please inter number:"<<endl;
-  cin>>number;
-    while(number<=100){
-        cout<<++number<<endl;
-    }
-        break;
-      case 2:
+        int s0SelectedNumber;
         int number;
-        cout << "please inter number" << endl;
-        cin >> number;
-        do {
-          cout << ++number << endl;
-        } while (number <= 100);
-        break;
-      case 3:
-        cout << R"(
+        cin >> s0SelectedNumber;
+        switch (s0SelectedNumber)
+        {
+        case 1:
+            cout << "please inter number:" << endl;
+            cin >> number;
+            while (number <= 100)
+            {
+                cout << ++number << endl;
+            }
+            break;
+        case 2:
+            int number;
+            cout << "please inter number" << endl;
+            cin >> number;
+            do
+            {
+                cout << ++number << endl;
+            } while (number <= 100);
+            break;
+        case 3:
+            cout << R"(
             // To view the video tutorial, refer to Ostad Safai's Telegram
         // link : https://t.me/pcmabani/87
 #include <iostream>
@@ -69,97 +76,174 @@ int main()
 return 0;
 }
         )";
-        break;}
-    break;
-  case 1:
-    int x, y, s;
-    cout << "please inter x :" << endl;
-    cin >> x;
-    cout << "please inter y :" << endl;
-    cin >> y;
-    s = x * y;
-    cout << "Result: " << s;
-    break;
-  case 2:
-    int a1, t1, a2, t2, a3, t3, s1, s2, s3, total, result;
-    cout << "Please enter the length and width of the first room : \n sample 2 "
-            "4 "
-            "\n";
-    cin >> a1 >> t1;
-    cout
-        << "& Please enter the length and width of the second room \n sample 2 "
-           "4 \n";
-    cin >> a2 >> t2;
-    cout << "& Please enter the length and width of the third room \n sample 2 "
-            "4 "
-            "\n";
-    cin >> a3 >> t3;
-    cout << "thanks! please wait to show result \n";
-    s1 = a1 * t1;
-    s2 = a2 * t2;
-    s3 = a3 * t3;
-    total = (s1 + s2 + s3) * PRICE;
-    result = (s1 > s2 && s1 > s3) ? s1 : (s2 > s1 && s2 > s3) ? s2 : s3;
-    cout << "total price:" << total << "\n";
-    cout << "more expensive room :" << result << "\n";
-    break;
-  case 3:
-    string s3SelecteNumberText = R"(
+            break;
+        }
+        break;
+    case 1:
+        int x, y, s;
+        cout << "please inter x :" << endl;
+        cin >> x;
+        cout << "please inter y :" << endl;
+        cin >> y;
+        s = x * y;
+        cout << "Result: " << s;
+        break;
+    case 2:
+        int a1, t1, a2, t2, a3, t3, s1, s2, s3, total, result;
+        cout << "Please enter the length and width of the first room : \n sample 2 "
+                "4 "
+                "\n";
+        cin >> a1 >> t1;
+        cout
+            << "& Please enter the length and width of the second room \n sample 2 "
+               "4 \n";
+        cin >> a2 >> t2;
+        cout << "& Please enter the length and width of the third room \n sample 2 "
+                "4 "
+                "\n";
+        cin >> a3 >> t3;
+        cout << "thanks! please wait to show result \n";
+        s1 = a1 * t1;
+        s2 = a2 * t2;
+        s3 = a3 * t3;
+        total = (s1 + s2 + s3) * PRICE;
+        result = (s1 > s2 && s1 > s3) ? s1 : (s2 > s1 && s2 > s3) ? s2
+                                                                  : s3;
+        cout << "total price:" << total << "\n";
+        cout << "more expensive room :" << result << "\n";
+        break;
+    case 3:
+    {
+        string s3SelecteNumberText = R"(
       please Selecet Number :
-      1.SerPrecision.cpp
+      1.SetPrecision.cpp
       2.SizeOF.cpp
       3.DataTypeConvertor.cpp
       )";
-    int s3SelectedNumber;
-    cout << s3SelecteNumberText << endl;
-    cin >> s3SelectedNumber;
-    switch (s3SelectedNumber) {
-    case 1:
-      cout << "Please Inter Precision :" << endl;
-      int PrecisionNumber;
-      cin >> PrecisionNumber;
-      cout << "Please Inter Number" << endl;
-      double Number;
-      cin >> Number;
-      cout << "OK" << endl << setprecision(PrecisionNumber);
-      cout << Number;
-      break;
-    case 2:
-      cout << "DataType Size via sizeof function:" << endl;
-      cout << "short :" << sizeof(short) << endl;
-      cout << "int : " << sizeof(int) << endl;
-      cout << "long : " << sizeof(long) << endl;
-      cout << "long int : " << sizeof(long int) << endl;
-      cout << "long long int : " << sizeof(long long int) << endl;
-      cout << "string : " << sizeof(string) << endl;
-      cout << "float : " << sizeof(float) << endl;
-      cout << "double : " << sizeof(double) << endl;
-      cout << "bool : " << sizeof(bool) << endl;
-      break;
-    case 3:
-      cout << R"(Please Select DataType:
+        int s3SelectedNumber;
+        cout << s3SelecteNumberText << endl;
+        cin >> s3SelectedNumber;
+        switch (s3SelectedNumber)
+        {
+        case 1:
+            cout << "Please Inter Precision :" << endl;
+            int PrecisionNumber;
+            cin >> PrecisionNumber;
+            cout << "Please Inter Number" << endl;
+            double Number;
+            cin >> Number;
+            cout << "OK" << endl
+                 << setprecision(PrecisionNumber);
+            cout << Number;
+            break;
+        case 2:
+            cout << "DataType Size via sizeof function:" << endl;
+            cout << "short :" << sizeof(short) << endl;
+            cout << "int : " << sizeof(int) << endl;
+            cout << "long : " << sizeof(long) << endl;
+            cout << "long int : " << sizeof(long int) << endl;
+            cout << "long long int : " << sizeof(long long int) << endl;
+            cout << "string : " << sizeof(string) << endl;
+            cout << "float : " << sizeof(float) << endl;
+            cout << "double : " << sizeof(double) << endl;
+            cout << "bool : " << sizeof(bool) << endl;
+            break;
+        case 3:
+            cout << R"(Please Select DataType:
     1. int to char
     2. char to int
     )" << endl;
-      int SelectedDataType;
-      cin >> SelectedDataType;
-      switch (SelectedDataType) {
-      case 1:
-        cout << "please inter your int Number : " << endl;
-        int NumberINT;
-        cin >> NumberINT;
-        cout << char(NumberINT);
+            int SelectedDataType;
+            cin >> SelectedDataType;
+            switch (SelectedDataType)
+            {
+            case 1:
+                cout << "please inter your int Number : " << endl;
+                int NumberINT;
+                cin >> NumberINT;
+                cout << char(NumberINT);
+                break;
+            case 2:
+                cout << "Please inter your char :" << endl;
+                char NumberCH;
+                NumberCH = getch();
+                cout << int(NumberCH);
+                break;
+            }
+            break;
+        }
         break;
-      case 2:
-        cout << "Please inter your char :" << endl;
-        char NumberCH;
-        NumberCH = getch();
-        cout << int(NumberCH);
-        break;
-      }
-      break;
     }
-    break;
-  }
-  return 0;
+    case 4:
+        string s4SelectNumberText = R"(
+            please inter file number :
+            1. shomaresh
+            2. takhfif
+            3. Zok-Fard
+            4. char-amal-asli
+        )";
+        int s4SelectedNumber;
+        cout << s4SelectNumberText << endl;
+        cin >> s4SelectedNumber;
+
+        switch (s4SelectedNumber)
+        {
+        case 1:
+            int number;
+            cout << "please inter number:" << endl;
+            cin >> number;
+            if (number <= 9)
+            {
+                cout << "yekan";
+            }
+            else if (number <= 99)
+            {
+                cout << "dahgan";
+            }
+            else if (number <= 999)
+            {
+                cout << "sadgan";
+            }
+            else
+            {
+                cout << "we are supported three precision";
+            }
+            break;
+        case 2:
+            float price, takhfif, takhfif2, total;
+            cout << "please inter price:" << endl;
+            cin >> price;
+            cout << "please inter takhfif:" << endl;
+            cin >> takhfif;
+            takhfif2 = 1 - (takhfif / 100);
+            total = takhfif2 * price;
+            cout << "you can pay " << total << " IRR";
+            break;
+        case 3:
+
+            cin >> number;
+            if (number % 2 == 0)
+            {
+                cout << "in adad zoj hast";
+            }
+            else
+            {
+                cout << "in adad fard hast";
+            }
+            break;
+        case 4:
+            cout << "please inter numbers : \n sample 2 5" << endl;
+            int number1, number2;
+            cin >> number1 >> number2;
+
+            cout << "reasult is :" << endl;
+            cout << number1 + number2 << endl;
+            cout << number1 - number2 << endl;
+            cout << number1 * number2 << endl;
+            cout << number1 / number2;
+            break;
+        }
+        break;
+    }
+    return 0;
 }
