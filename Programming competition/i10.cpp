@@ -50,7 +50,7 @@ int main()
         }
     }
 
-    // remove duplicate
+    // find max
     int max = count[0];
     for (int i = 0; i < size; i++)
     {
