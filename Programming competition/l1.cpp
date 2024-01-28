@@ -5,6 +5,6 @@ int main()
 {
     int side;
     cin >> side;
-    court << side*side;
+    cout << side*side;
     return 0;
 }
