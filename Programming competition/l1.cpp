@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int side;
-    cout << "please inter side of square";
     cin >> side;
+    court << side*side;
     return 0;
 }
