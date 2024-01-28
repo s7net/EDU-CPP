@@ -65,6 +65,7 @@ int main()
         case 1:
         {
             clear(OS);
+            clear(OS);
             int x, y, s;
             cout << "please inter x :" << endl;
             cin >> x;
@@ -78,6 +79,7 @@ int main()
         // main => case2
         case 2:
         {
+            clear(OS);
             int a1, t1, a2, t2, a3, t3, s1, s2, s3, total, result;
             const int PRICE = 200000;
 
@@ -107,6 +109,7 @@ int main()
         case 3:
         {
             clear(OS);
+            clear(OS);
             string MenuC3 = R"(
 1.DataTypeConvertor
 2.SetPrecision
@@ -122,6 +125,7 @@ please choose number:)";
             // main => case 3 => case 1
             case 1:
             {
+                clear(OS);
                 cout << R"(
     Please Select DataType:
     1. int to char
@@ -132,19 +136,25 @@ please choose number:)";
                 switch (SelectedDataType)
                 {
                 case 1:
+                {
+                    clear(OS);
                     cout << "please inter your int Number : " << endl;
                     int NumberINT;
                     cin >> NumberINT;
                     cout << char(NumberINT);
-                    // break;
+                    break;
+                }
                 case 2:
+                {
+                    clear(OS);
                     cout << "Please inter your char :" << endl;
                     char NumberCH;
                     NumberCH = getch();
                     cout << int(NumberCH);
-                    // break;
+                    break;
                 }
-                // break;
+                }
+                break;
             }
             // main => case 3 => case 2
             case 2:
@@ -158,7 +168,7 @@ please choose number:)";
                 cout << "OK" << endl
                      << setprecision(PrecisionNumber);
                 cout << Number;
-                // break;
+                break;
             }
             // main => case 3 => case 3
             case 3:
@@ -173,13 +183,14 @@ please choose number:)";
                 cout << "float : " << sizeof(float) << endl;
                 cout << "double : " << sizeof(double) << endl;
                 cout << "bool : " << sizeof(bool) << endl;
-                // break;
+                break;
             }
             }
         }
         // main => case4
         case 4:
         {
+            clear(OS);
             clear(OS);
             string MenuC4 = R"(
             1.score
@@ -197,6 +208,7 @@ please choose number:)";
             // Menu => case 4 => case 1
             case 1:
             {
+                clear(OS);
                 int i, findBigger, biggersCount = 0;
                 float score[30];
                 float jamScore;
@@ -275,6 +287,7 @@ please choose number:)";
         // main => case5
         case 5:
         {
+            clear(OS);
             int size = 4, i, j = 0, Number[30][2];
             for (i = 0; i < size; i++)
             {
@@ -312,12 +325,14 @@ please choose number:)";
         // main => case6
         case 6:
         {
+            clear(OS);
             break;
         }
 
         // main => case7
         case 7:
         {
+            clear(OS);
             string MenuTextC7;
             MenuTextC7 = R"(
 
@@ -351,6 +366,7 @@ please choose number:)";
                 // main => case 7 => case 2 => case 1
                 case 1:
                 {
+                    clear(OS);
                     int day, month, year;
                     cin >> day >> month >> year;
                     cout << year << "/" << month << "/" << day;
@@ -359,6 +375,7 @@ please choose number:)";
                 // main => case 7 => case 2 => case 2
                 case 2:
                 {
+                    clear(OS);
                     int num1, num2, num3, num4;
                     cin >> num1 >> num2 >> num3 >> num4;
                     cout << "Sum : " << num1 + num2 + num3 + num4 << endl;
@@ -370,6 +387,7 @@ please choose number:)";
                 // main => case 7 => case 2 => case 3
                 case 3:
                 {
+                    clear(OS);
                     int z1, z2, z3;
                     cin >> z1 >> z2 >> z3;
                     if (z1 == z2 && z1 == z3 && z2 == z3)
@@ -410,6 +428,7 @@ please choose number:)";
                 // main => case 7 => case 3 => case 1
                 case 1:
                 {
+                    clear(OS);
                     int number;
                     cin >> number;
 
@@ -427,6 +446,7 @@ please choose number:)";
                 // main => case 7 => case 3 => case 2
                 case 2:
                 {
+                    clear(OS);
                     int number;
                     cin >> number;
                     if (number > 0)
@@ -465,6 +485,7 @@ please choose number:)";
                 // main => case 7 => case 3 => case 3
                 case 3:
                 {
+                    clear(OS);
                     // input data from user
                     const int size = 10;
                     int score[size];
@@ -518,6 +539,7 @@ please choose number:)";
                 // main => case 7 => case 3 => case 4
                 case 4:
                 {
+                    clear(OS);
                     // data Type
                     const int size = 50;
                     int tempSize = 50;
@@ -572,6 +594,7 @@ please choose number:)";
                 // main => case 7 => case 4 => case 1
                 case 1:
                 {
+                    clear(OS);
                     int number[2][10];
                     // input data from user
                     for (int i = 0; i < 2; i++)
@@ -604,6 +627,7 @@ please choose number:)";
                 // main => case 7 => case 4 => case 2
                 case 2:
                 {
+                    clear(OS);
                     string text;
                     cin >> text;
                     int size = text.length();
@@ -617,6 +641,7 @@ please choose number:)";
                 // main => case 7 => case 4 => case 3
                 case 3:
                 {
+                    clear(OS);
                     int num1, num2;
                     cin >> num1 >> num2;
                     for (int i = 1, count = 0; i <= num1; i++)
@@ -636,6 +661,7 @@ please choose number:)";
                 // main => case 7 => case 4 => case 4
                 case 4:
                 {
+                    clear(OS);
                     int num1, num2;
                     cin >> num1 >> num2;
                     string num1String = to_string(num1);
@@ -682,6 +708,7 @@ please choose number:)";
                 // main => case case 7 => case 5 => case 1
                 case 1:
                 {
+                    clear(OS);
                     int number;
                     cin >> number;
                     switch (number)
@@ -707,6 +734,7 @@ please choose number:)";
                 // main => case case 7 => case 5 => case 2
                 case 2:
                 {
+                    clear(OS);
                     int number;
                     cin >> number;
                     cout << "agha rez";
@@ -719,6 +747,7 @@ please choose number:)";
                 // main => case case 7 => case 5 => case 3
                 case 3:
                 {
+                    clear(OS);
                     const int size = 6;
                     float ghad = 4.0;
                     float number[size];
@@ -760,6 +789,7 @@ please choose number:)";
         // main => case8
         case 8:
         {
+            clear(OS);
             string MenuTextC8 = R"(
 
                 2.tamrin 2
@@ -796,6 +826,7 @@ please choose number:)";
                 // main => case 8 => case 2 => case 1
                 case 1:
                 {
+                    clear(OS);
                     int number;
                     cin >> number;
                     if (number > 0)
@@ -812,6 +843,7 @@ please choose number:)";
                 // main => case 8 => case 2 => case 2
                 case 2:
                 {
+                    clear(OS);
                     int number;
                     cin >> number;
                     const float p = 3.14;
@@ -823,6 +855,7 @@ please choose number:)";
                 // main => case 8 => case 2 => case 3
                 case 3:
                 {
+                    clear(OS);
                     int number1, number2, number3;
                     cin >> number1 >> number2 >> number3;
                     cout << (number1 * 3600) + (number2 * 60) + (number3);
@@ -852,6 +885,7 @@ please choose number:)";
                 // main => case 8 => case 3 => case1
                 case 1:
                 {
+                    clear(OS);
                     int number;
                     cin >> number;
                     for (int i = 0; i < number; i++)
@@ -868,6 +902,7 @@ please choose number:)";
                 // main => case 8 => case 3 => case2
                 case 2:
                 {
+                    clear(OS);
                     int number;
                     cin >> number;
                     for (int sum = 0; number > 0;)
@@ -885,6 +920,7 @@ please choose number:)";
                 // main => case 8 => case 3 => case3
                 case 3:
                 {
+                    clear(OS);
                     const int size = 10;
                     int tempSize = 50;
                     char chaR[size];
@@ -939,6 +975,7 @@ please choose number:)";
                 // main => case 8 => case 4 => case 1
                 case 1:
                 {
+                    clear(OS);
                     int score;
                     cin >> score;
 
@@ -971,6 +1008,7 @@ please choose number:)";
                 // main => case 8 => case 4 => case 2
                 case 2:
                 {
+                    clear(OS);
                     int number;
                     cin >> number;
                     for (float i = 1, temp = 0; i < number; i++)
@@ -986,6 +1024,7 @@ please choose number:)";
                 // main => case 8 => case 4 => case 3
                 case 3:
                 {
+                    clear(OS);
                     const int size = 12;
                     int numbers[size];
                     // input
@@ -1020,6 +1059,7 @@ please choose number:)";
                 // main => case 8 => case 4 => case 4
                 case 4:
                 {
+                    clear(OS);
                     const int size = 5;
                     int dup[size];
                     float num[size];
@@ -1092,6 +1132,7 @@ please choose number:)";
                 // main => case 8 => case 5 => case 1
                 case 1:
                 {
+                    clear(OS);
                     string tempString1 = "", tempString2 = "";
                     int number, count = 1;
                     cin >> number;
@@ -1162,6 +1203,7 @@ please choose number:)";
                 // main => case 8 => case 5 => case 1
                 case 2:
                 {
+                    clear(OS);
                     char m1, m2;
                     int bijanScore = 0, keyvanScore = 0;
 
@@ -1185,6 +1227,7 @@ please choose number:)";
                 // main => case 8 => case 5 => case 1
                 case 3:
                 {
+                    clear(OS);
                     const int size = 4, z = 3;
                     int sum[size];
                     int number[size][z];
@@ -1279,6 +1322,7 @@ please choose number:)";
             // main => case9
         case 9:
         {
+            clear(OS);
             string MenuTextC9 = R"(
                 1.char-amal-asli
                 2.shomaresh
@@ -1366,6 +1410,7 @@ please choose number:)";
             // main => case10
         case 10:
         {
+            clear(OS);
             string MenuTextC10 = R"(
                 1.s1
                 2.s2
@@ -1557,7 +1602,8 @@ ex6.cpp:17:15: error: invalid conversion from 'const int*' to 'int*' [-fpermissi
         // case 11
         case 11:
         {
-            system("cls");
+            clear(OS);
+            clear(OS);
             const int size = 14;
             list exam[size];
 
@@ -1858,6 +1904,7 @@ whats "b" output ?
         }
         case 12:
         {
+            clear(OS);
             cout << R"(
 
                 - Easy questions :
@@ -1887,6 +1934,7 @@ whats "b" output ?
             switch (Qnumber)
             {
             case 1:
+
             {
                 int side;
                 cout << "please inter side of square";
@@ -2143,6 +2191,7 @@ whats "b" output ?
 
         case 13:
         {
+            clear(OS);
             cout << R"(
                 1.zoj ya fard
                 2.tol se parekhat
