@@ -68,5 +68,3 @@
 ```run
 cd FolderName
 g++ main.cpp -o main && ./main
-
-
