@@ -1,6 +1,6 @@
 <div align="center"><img src="https://pub-f3b44c90882f4cd189da08d385eb4a7e.r2.dev/app.png" width="700"></div>
 
-# <img src="https://raw.githubusercontent.com/ahspace7/EDU-CPP/main/object-storage/cpp.svg" width="30" heght="3-">  EDU-CPP
+# <img src="https://raw.githubusercontent.com/ahspace7/EDU-CPP/main/object-storage/cpp.svg" width="30" heght="3-">  آموزش سی پلاس پلاس (EDU-CPP)
 یک پروژه کوچیک اما مفید برای دانشجویان درس مبانی کامپیوتر و برنامه سازی
 در این پژوه سعی شده تمام کد های تدریس شده در طول ترم پوشش داده بشه همچنین تعداد کمی ازمون  (کویز) در مورد اپریتور ها قرار دادم تا بتونید خودتون رو بسنجید
 
