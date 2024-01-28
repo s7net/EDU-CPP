@@ -1937,8 +1937,8 @@ whats "b" output ?
 
             {
                 int side;
-                cout << "please inter side of square";
                 cin >> side;
+                cout << side * side;
                 break;
             }
             case 2:
